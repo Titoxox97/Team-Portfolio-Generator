@@ -11,4 +11,5 @@ test('Test Intern Class', () => {
     }
     expect(boolean).toBe(true)
     expect(Zion.getRole()).toBe("Intern")
+    expect(Zion.getSchool()).toBe("Duke University")
 })

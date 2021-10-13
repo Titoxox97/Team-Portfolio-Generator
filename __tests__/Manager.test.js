@@ -11,4 +11,5 @@ test('Test Manager Class', () => {
     }
     expect(boolean).toBe(true)
     expect(Dame.getRole()).toBe("Manager")
+    expect(Dame.getOfficeNumber()).toBe(541)
 })

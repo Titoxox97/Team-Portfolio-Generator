@@ -11,4 +11,5 @@ test('Test Engineer Class', () => {
     }
     expect(boolean).toBe(true)
     expect(Nikola.getRole()).toBe("Engineer")
+    expect(Nikola.getGitHub()).toBe("jokerNik93")
 })
