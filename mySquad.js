@@ -1,10 +1,10 @@
 const Manager = require("./lib/Manager");
-
+// Created variables for each array for each team member
 const createmySquadHTML = (team) => {
   let managerArray = [];
   let internArray = [];
   let engineerArray = [];
-
+  // Created the arrays for each team member to be called inside the html when generated and wrapped it in a for loop
   team.forEach((element) => {
     if (element.constructor.name === "Manager") {
       managerArray.push(element);
@@ -35,6 +35,8 @@ const createmySquadHTML = (team) => {
     allManager += managerDiv;
   });
 
+  //   created the html boilerplate that will generate my project on the webpage including css bootstrap links to apply to the deployed page
+  // called the different employee types into the body of the html
   return `
     <!DOCTYPE html>
     <html lang="en">
