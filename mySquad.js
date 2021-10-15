@@ -16,11 +16,25 @@ const createmySquadHTML = (team) => {
       engineerArray.push(element);
     }
   });
-  console.log(managerArray);
-  console.log(internArray);
-  console.log(engineerArray);
 
-  console.log(team);
+  let allEngineer = "";
+  engineerArray.forEach((engineer) => {
+    const engineerDiv = createEngineer(engineer);
+    allEngineer += engineerDiv;
+  });
+
+  let allIntern = "";
+  internArray.forEach((intern) => {
+    const internDiv = createIntern(intern);
+    allIntern += internDiv;
+  });
+
+  let allManager = "";
+  managerArray.forEach((manager) => {
+    const managerDiv = createManager(manager);
+    allManager += managerDiv;
+  });
+
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -35,18 +49,21 @@ const createmySquadHTML = (team) => {
     </head>
 
     <body>
-    ${engineerArray.forEach((engineer) => createEngineer(engineer))}; 
+    ${allEngineer}
+    ${allIntern}
+    ${allManager}
     </body>
     </html>`;
 };
 const createEngineer = (engineer) => {
+  console.log(engineer);
   return `<div class="col-5">
         <div class="card mx-auto mb-3" style="max-width: 20rem">
         <h5 class="card-header">${engineer.name}<br /><br />Engineer</h5>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${engineer.id}</li>
             <li class="list-group-item">Email Address: ${engineer.email}</li>
-            <li class="list-group-item">Email Address: ${engineer.github}</li>
+            <li class="list-group-item">Github: ${engineer.github}</li>
         </ul>
         </div>
     </div>
