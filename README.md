@@ -4,7 +4,7 @@
 <p>The objective of this project is to create an application that will help business and development teams generate a portfolio
 of their employee rosters displaying their basic information such as name, id, email, and another attribute specific to their job title.</p>
 
-<h2>The Process</p>
+<h2>The Process</h2>
 <p>
 I created a parent element called "Employee" which I then extended to the child elements "Engineer", "Intern", and "Manager".
 
@@ -14,4 +14,8 @@ I then created the parameters I would include in the command line questionaire t
 
 The I worked to create an html boilerplate which would properly implement the information passed through the command line questionnaire and generate the data in an organized and viewable manner.
 
-I then ran "node index.js", answered the prompts, and was able to generate a web page that included all of my teams data in a neat and organzied manner, also implementing a css bootstrap link to make it look cleaner.</p>
+I then ran "node index.js", answered the prompts, and was able to generate a web page that included all of my teams data in a neat and organzied manner, also implementing a css bootstrap link to make it look cleaner, and organize the inputted data.</p>
+
+<h3>Links</h3>
+
+https://github.com/Titoxox97/Team-Portfolio-Generator/edit/main/README.md
