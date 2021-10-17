@@ -58,7 +58,6 @@ const createmySquadHTML = (team) => {
     </html>`;
 };
 const createEngineer = (engineer) => {
-  console.log(engineer);
   return `<div class="col-5">
         <div class="card mx-auto mb-3" style="max-width: 20rem">
         <h5 class="card-header">${engineer.name}<br /><br />Engineer</h5>
@@ -74,7 +73,7 @@ const createEngineer = (engineer) => {
 const createManager = (manager) => {
   return `<div class="col-5">
     <div class="card mx-auto mb-3" style="max-width: 20rem">
-    <h5 class="card-header">${manager.name}<br /><br />Engineer</h5>
+    <h5 class="card-header">${manager.name}<br /><br />Manager</h5>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${manager.id}</li>
         <li class="list-group-item">Email Address: ${manager.email}</li>
@@ -88,7 +87,7 @@ const createManager = (manager) => {
 const createIntern = (intern) => {
   return `<div class="col-5">
     <div class="card mx-auto mb-3" style="max-width: 20rem">
-    <h5 class="card-header">${intern.name}<br /><br />Engineer</h5>
+    <h5 class="card-header">${intern.name}<br /><br />Intern</h5>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${intern.id}</li>
         <li class="list-group-item">Email Address: ${intern.email}</li>
